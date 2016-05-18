@@ -1,5 +1,6 @@
 <?php
 require_once '../src/ElasticEmail.php';
+// Rename config-dist.php to config.php and configure apikey and email account
 $config = require_once './config.php';
 
 $Email = new ElasticEmail\ElasticEmail($config['api_key'],$config['email_account']);
